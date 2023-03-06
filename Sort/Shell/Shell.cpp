@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "rus");
-	int n, d, j, g, c;
+	int n, d, j, g, c, tmp;
 	srand(time(NULL));
 	cout << "Задайте размер массива" << endl;
 	cin >> n;
@@ -27,8 +27,10 @@ int main()
 			j = i;
 			while (j >= 0 and a[j] > a[j + d])
 			{
-				swap(a[j], a[j + d]);
-				j--;
+				tmp = a[j];
+				a[j] = a[j + d];
+				a[j + d] = tmp;
+				j -= d;
 			}
 		}
 		d = d / 2;
