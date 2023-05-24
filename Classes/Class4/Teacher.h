@@ -10,17 +10,14 @@ protected:
     string subject;
     int hours;
 public:
-    // Конструкторы
     Teacher() : Person(), subject(""), hours(0) {}
 
     Teacher(const std::string& n, int a, const std::string& s, int h) : Person(n, a), subject(s), hours(h) {}
 
     Teacher(const Teacher& other) : Person(other), subject(other.subject), hours(other.hours) {}
 
-    // Деструктор
     ~Teacher() {}
 
-    // Селекторы и модификаторы
     string getSubject() const {
         return subject;
     }
@@ -54,7 +51,6 @@ public:
         return out;
 
     }
-    // Увеличение и уменьшение часов
     void increaseHours(int amount) {
         hours += amount;
     }
