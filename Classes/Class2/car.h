@@ -1,10 +1,10 @@
 #pragma once
 #include <string>
 using namespace std;
-/*Пользовательский класс АВТОМОБИЛЬ
-Марка – string
-Модель – string
-Стоимость– int*/
+/*ГЏГ®Г«ГјГ§Г®ГўГ ГІГҐГ«ГјГ±ГЄГЁГ© ГЄГ«Г Г±Г± ГЂГ‚Г’ГЋГЊГЋГЃГ€Г‹Гњ
+ГЊГ Г°ГЄГ  вЂ“ string
+ГЊГ®Г¤ГҐГ«Гј вЂ“ string
+Г‘ГІГ®ГЁГ¬Г®Г±ГІГјвЂ“ int*/
 
 class Car
 {
@@ -14,7 +14,7 @@ class Car
 public:
 	Car();
 	Car(string brand, string model, int price);
-	//~Car();
+	~Car();
 	void show();
 	string getBrand();
 	string getModel();
