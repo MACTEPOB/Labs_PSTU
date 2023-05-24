@@ -21,7 +21,6 @@ public:
     friend istream& operator>>(istream& is, Pair& pair);
     bool operator==(const Pair& other);
     bool operator!=(const Pair& other);
-    // ѕерегрузка операции вычитани€ константы из пары
     void operator-(int constant);
     void operator-(double constant);
 };
