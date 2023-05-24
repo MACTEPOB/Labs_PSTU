@@ -18,10 +18,7 @@ Car::Car(string brand, string model, int price)
 	Price = price;
 }
 
-/*Car::~Car()
-{
-	cout << "Îøèáêà\n";
-}*/
+Car::~Car() {}
 
 void Car::show()
 {
