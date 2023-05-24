@@ -1,10 +1,6 @@
 #pragma once
 #include <string>
 using namespace std;
-/*Ïîëüçîâàòåëüñêèé êëàññ ÀÂÒÎÌÎÁÈËÜ
-Ìàðêà – string
-Ìîäåëü – string
-Ñòîèìîñòü– int*/
 
 class Car
 {
